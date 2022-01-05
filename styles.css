@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Open+Sans&display=swap');
 
 body {
-  background-color: #DADDFC;
+  background: linear-gradient(270deg, #998CEB, #77E4D4, #B4FE98, #FBF46D );
+  background-size: 400% 300%;
+  animation: bgGradient 10s ease-out infinite;
+  padding: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #DADDFC;
+}
+
+@keyframes bgGradient {
+  0%{background-position: 0% 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0% 50%;}
 }
 
 p {
